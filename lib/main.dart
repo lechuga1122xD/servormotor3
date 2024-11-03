@@ -50,15 +50,9 @@ class _HomepageState extends State<Homepage> {
           children: [
             ElevatedButton(
               onPressed: () {
-                _bluetoothManager.sendData("0"); // Enviar "0" al CHIPI-BOT
+                _bluetoothManager.sendData("1"); // Enviar "1" al CHIPI-BOT
               },
-              child: const Text("Enviar 0 grado"),
-            ),
-            ElevatedButton(
-              onPressed: () {
-                _bluetoothManager.sendData("180"); // Enviar "180" al CHIPI-BOT
-              },
-              child: const Text("Enviar 180 grados"),
+              child: const Text("Detener"),
             ),
           ],
         ),

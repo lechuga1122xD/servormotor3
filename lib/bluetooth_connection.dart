@@ -2,6 +2,7 @@ import 'package:flutter_bluetooth_serial/flutter_bluetooth_serial.dart';
 import 'package:permission_handler/permission_handler.dart';
 import 'dart:convert';
 
+//Clase de conexion con el modulo de HC-06
 class BluetoothConnectionManager {
   BluetoothConnection? connection;
   Future<void> checkPermissions() async {
